@@ -24,13 +24,25 @@ Note:
   All data is accessed through the datos.gov.co Socrata API, which is open and
   requires no authentication for public datasets.
 """
-import argparse, json, csv, sys, os, urllib.request, urllib.parse
+import argparse, json, csv, sys, os, urllib.request, urllib.parse, urllib.error
 from datetime import datetime
 
 # ── Config ──────────────────────────────────────────────────────────────────
 
 BASE_API = "https://www.datos.gov.co"
 CATALOG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "datasets_catalog.json")
+IRC_CATALOG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "irc_catalog.json")
+
+# Browser-like headers for irc.gov.co (Azure Application Gateway requires these)
+IRC_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "es-CO,es;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+}
 
 # ── HTTP helpers ────────────────────────────────────────────────────────────
 
@@ -272,6 +284,124 @@ def print_table(rows):
     if len(rows) > 50:
         print(f"\n... {len(rows) - 50} more rows (use --limit to adjust)")
 
+# ── IRC.gov.co ─────────────────────────────────────────────────────────────
+
+def load_irc_catalog():
+    """Load the IRC dataset catalog."""
+    if not os.path.exists(IRC_CATALOG_PATH):
+        print(f"Error: IRC catalog not found at {IRC_CATALOG_PATH}", file=sys.stderr)
+        return None
+    with open(IRC_CATALOG_PATH) as f:
+        return json.load(f)
+
+def list_irc_datasets():
+    """List all IRC.gov.co datasets (Excel/PDF file collections)."""
+    irc = load_irc_catalog()
+    if not irc:
+        return
+    portal = irc.get("portal", {})
+    print(f"IRC.gov.co Catalog — {portal.get('name', 'IRC')}\n")
+    print(f"  Portal: {portal.get('url', '')}")
+    print(f"  Platform: {portal.get('platform', '')}")
+    print(f"  Notes: {portal.get('notes', '')}")
+    print()
+    
+    for ds in irc.get("datasets", []):
+        files = ds.get("files", [])
+        total = ds.get("total_files", len(files))
+        print(f"  {ds['id']}")
+        print(f"    Name: {ds['name']}")
+        print(f"    Format: {ds.get('format', 'N/A')}")
+        print(f"    Frequency: {ds.get('frequency', 'N/A')}")
+        print(f"    Description: {ds.get('description', 'N/A')[:100]}")
+        print(f"    Files: {len(files)} shown / {total} total")
+        print(f"    Page: {ds.get('page', 'N/A')}")
+        print()
+    
+    pbi = irc.get("powerbi", {})
+    if pbi:
+        print(f"  Power BI: {pbi.get('title', '')}")
+        print(f"    URL: {pbi.get('embed_url', '')}")
+        print(f"    Refresh: {pbi.get('refresh', 'N/A')}")
+        print()
+
+def show_irc_info(ds_id):
+    """Show detailed info for an IRC dataset."""
+    irc = load_irc_catalog()
+    if not irc:
+        return
+    ds = next((d for d in irc.get("datasets", []) if d["id"] == ds_id), None)
+    if not ds:
+        print(f"IRC dataset '{ds_id}' not found. Use --irc-list to see options.", file=sys.stderr)
+        sys.exit(1)
+    print(f"IRC Dataset: {ds['name']}")
+    print(f"ID: {ds['id']}")
+    print(f"Format: {ds.get('format', 'N/A')}")
+    print(f"Frequency: {ds.get('frequency', 'N/A')}")
+    print(f"Description: {ds.get('description', 'N/A')}")
+    print(f"Page: {ds.get('page', 'N/A')}")
+    if ds.get('portlet_instance'):
+        print(f"Portlet: {ds['portlet_instance']} (folder_id: {ds.get('folder_id', 'N/A')})")
+    total = ds.get("total_files", len(ds.get("files", [])))
+    print(f"Files: {len(ds.get('files', []))} shown / {total} total")
+    print(f"\nDownload URLs:")
+    for f in ds.get("files", []):
+        name = f.get("name", "")
+        url = f.get("url", "")
+        period = f.get("period", "")
+        size = f.get("size", "")
+        print(f"  - {name} [{period}] {size}")
+        print(f"    {url}")
+    if ds.get("pagination"):
+        print(f"\nPagination: {ds['pagination']}")
+
+def search_irc(keyword):
+    """Search IRC datasets by keyword."""
+    irc = load_irc_catalog()
+    if not irc:
+        return
+    kw = keyword.lower()
+    results = []
+    for ds in irc.get("datasets", []):
+        searchable = f"{ds.get('name','')} {ds.get('description','')} {ds.get('format','')} {' '.join(f.get('name','') for f in ds.get('files',[]))}".lower()
+        if kw in searchable:
+            results.append(ds)
+    if not results:
+        print(f"No IRC datasets found matching '{keyword}'")
+        return
+    print(f"IRC Search '{keyword}' — {len(results)} match(es)\n")
+    for ds in results:
+        print(f"  {ds['id']} → {ds['name']}")
+        print(f"    Format: {ds.get('format', 'N/A')} | Files: {len(ds.get('files',[]))}/{ds.get('total_files', '?')}")
+        print()
+
+def download_irc_file(url, output_dir="."):
+    """Download a file from irc.gov.co."""
+    req = urllib.request.Request(url, headers=IRC_HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            # Try to get filename from URL or Content-Disposition
+            cd = resp.headers.get("Content-Disposition", "")
+            if "filename=" in cd:
+                fname = cd.split("filename=")[-1].strip('"\'')
+            else:
+                fname = url.split("/")[-1].split("?")[0]
+            fpath = os.path.join(output_dir, fname)
+            with open(fpath, "wb") as f:
+                while True:
+                    chunk = resp.read(8192)
+                    if not chunk:
+                        break
+                    f.write(chunk)
+            print(f"Downloaded: {fpath}")
+            return fpath
+    except urllib.error.HTTPError as e:
+        print(f"HTTP Error {e.code}: {e.reason}", file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        return None
+
 # ── Known dataset IDs ───────────────────────────────────────────────────────
 
 KNOWN_DATASETS = [
@@ -305,6 +435,12 @@ Examples:
   %(prog)s --data xjxk-qhsc --query 'vigencia=2026'   # SoQL filter
   %(prog)s --columns xjxk-qhsc                        # Show column names
   %(prog)s --build-catalog                             # Rebuild catalog from API
+
+IRC.gov.co (Investor Portal) commands:
+  %(prog)s --irc-list                                  # List IRC file collections
+  %(prog)s --irc-info irc-deuda-perfil                  # Show debt profile Excel files
+  %(prog)s --irc-search "deuda"                         # Search IRC datasets
+  %(prog)s --irc-download 'https://www.irc.gov.co/documents/d/guest/perfil-deuda-bruta-gnc-mayo-2026-2?download=true'  # Download a file
         """,
     )
     parser.add_argument("--list", action="store_true", help="List all datasets")
@@ -317,12 +453,32 @@ Examples:
     parser.add_argument("--query", type=str, default=None, help="SoQL query string (e.g., 'vigencia=2026')")
     parser.add_argument("--format", type=str, default="json", choices=["json", "csv", "table", "count"], help="Output format (default: json)")
     parser.add_argument("--build-catalog", action="store_true", help="Rebuild the dataset catalog from the API")
+    # IRC.gov.co options
+    parser.add_argument("--irc-list", action="store_true", help="List IRC.gov.co datasets (Excel/PDF file collections)")
+    parser.add_argument("--irc-info", type=str, default=None, metavar="IRC_DATASET_ID", help="Show IRC dataset file catalog")
+    parser.add_argument("--irc-search", type=str, default=None, help="Search IRC datasets by keyword")
+    parser.add_argument("--irc-download", type=str, default=None, metavar="URL", help="Download a file from irc.gov.co")
+    parser.add_argument("--output-dir", type=str, default=".", help="Directory for downloaded files (default: current dir)")
     
     args = parser.parse_args()
     
     if args.build_catalog:
         print("Building catalog from datos.gov.co API...")
         build_catalog(KNOWN_DATASETS)
+        return
+    
+    # IRC.gov.co commands
+    if args.irc_list:
+        list_irc_datasets()
+        return
+    if args.irc_info:
+        show_irc_info(args.irc_info)
+        return
+    if args.irc_search:
+        search_irc(args.irc_search)
+        return
+    if args.irc_download:
+        download_irc_file(args.irc_download, args.output_dir)
         return
     
     if args.list:

@@ -1,0 +1,199 @@
+{
+  "portal": {
+    "name": "IRC — Inversión y Reforma Capital",
+    "full_name": "Oficina de Relación con Inversionistas",
+    "parent": "Ministerio de Hacienda y Crédito Público (MinHacienda), Colombia",
+    "url": "https://www.irc.gov.co",
+    "platform": "Liferay DXP",
+    "infrastructure": "Microsoft Azure Application Gateway v2",
+    "notes": "No public REST API. All data is file-based (Excel/PDF). Requires browser-like headers for access."
+  },
+  "download_pattern": "https://www.irc.gov.co/documents/d/guest/{slug}?download=true",
+  "access_headers": {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "es-CO,es;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1"
+  },
+  "powerbi": {
+    "title": "Perfil de Deuda Pública GNC",
+    "embed_url": "https://app.powerbi.com/view?r=eyJrIjoiNmNjZTAyZjctZWVhOC00NTdiLThkMzYtOGFjNzBkNGQxZWEyIiwidCI6ImI0ZWE2MGQ4LWJlNDktNDBiYy05OGM0LTE4YzQzYmZkNzIxZSIsImMiOjR9",
+    "page": "/deuda-publica/perfil-deuda-publica-gnc",
+    "description": "Interactive Power BI report showing Colombia's public debt profile",
+    "refresh": "Monthly"
+  },
+  "datasets": [
+    {
+      "id": "irc-deuda-perfil",
+      "name": "Perfil de Deuda Bruta GNC",
+      "source": "irc.gov.co",
+      "format": "Excel (.xls)",
+      "frequency": "Monthly",
+      "description": "Monthly snapshot of gross debt profile of the National Central Government (GNC)",
+      "page": "/deuda-publica/perfil-deuda-publica-gnc",
+      "portlet_instance": "ngtl",
+      "folder_id": 175031,
+      "files": [
+        {"name": "Perfil Deuda Bruta GNC Mayo 2026", "url": "https://www.irc.gov.co/documents/d/guest/perfil-deuda-bruta-gnc-mayo-2026-2?download=true", "size": "582 KB", "period": "May 2026"},
+        {"name": "Perfil Deuda Bruta GNC Abril 2026", "url": "https://www.irc.gov.co/documents/d/guest/perfil-deuda-bruta-gnc-abril-2026?download=true", "size": "583 KB", "period": "Apr 2026"},
+        {"name": "Perfil Deuda Bruta GNC Febrero 2026", "url": "https://www.irc.gov.co/documents/d/guest/perfil-deuda-bruta-gnc-febrero-2026-2?download=true", "size": "586 KB", "period": "Feb 2026"},
+        {"name": "Perfil Deuda Bruta GNC Enero 2026", "url": "https://www.irc.gov.co/documents/d/guest/perfil-deuda-bruta-gnc-enero-2026-2?download=true", "size": "583 KB", "period": "Jan 2026"},
+        {"name": "Perfil Deuda Bruta GNC Diciembre 2025", "url": "https://www.irc.gov.co/documents/d/guest/perfil-deuda-bruta-gnc-diciembre-2025-1-1?download=true", "size": "1.2 MB", "period": "Dec 2025"}
+      ]
+    },
+    {
+      "id": "irc-deuda-historico",
+      "name": "Histórico Total Deuda GNC",
+      "source": "irc.gov.co",
+      "format": "Excel (.xls)",
+      "frequency": "Monthly",
+      "description": "Historical time series of National Central Government debt — 93 files going back many years",
+      "page": "/deuda-publica/perfil-deuda-publica-gnc",
+      "portlet_instance": "notf",
+      "folder_id": 175077,
+      "total_files": 93,
+      "pagination": "8 files per page, 12 pages. URL pattern: ?_com_liferay_document_library_web_portlet_DLPortlet_INSTANCE_notf_curEntry={N}&_com_liferay_document_library_web_portlet_DLPortlet_INSTANCE_notf_deltaEntry=8",
+      "files": [
+        {"name": "Histórico Total Mayo 2026", "url": "https://www.irc.gov.co/documents/d/guest/historico-total-mayo2026-2?download=true", "size": "9.3 MB", "period": "May 2026"},
+        {"name": "Histórico Total Abril 2026", "url": "https://www.irc.gov.co/documents/d/guest/historico-total-abril2026?download=true", "size": "9.3 MB", "period": "Apr 2026"},
+        {"name": "Histórico Total Febrero 2026", "url": "https://www.irc.gov.co/documents/d/guest/historico-total-febrero2026-2?download=true", "size": "9.2 MB", "period": "Feb 2026"},
+        {"name": "Histórico Total Enero 2026", "url": "https://www.irc.gov.co/documents/d/guest/historico-total-enero2026-3?download=true", "size": "9.2 MB", "period": "Jan 2026"},
+        {"name": "Histórico Total Diciembre 2025", "url": "https://www.irc.gov.co/documents/d/guest/historico-total-diciembre2025?download=true", "size": "9.2 MB", "period": "Dec 2025"}
+      ]
+    },
+    {
+      "id": "irc-mfmp",
+      "name": "Marco Fiscal de Mediano Plazo",
+      "source": "irc.gov.co",
+      "format": "PDF",
+      "frequency": "Annual",
+      "description": "Medium-Term Fiscal Framework documents (2015–2024)",
+      "page": "/conoce-colombia/informacion-fiscal/marco-fiscal-mediano-plazo",
+      "total_files": 10,
+      "files": [
+        {"name": "MFMP 2024", "url": "https://www.irc.gov.co/documents/d/guest/marco-fiscal-de-mediano-plazo-2024?download=true", "period": "2024"},
+        {"name": "MFMP 2023", "url": "https://www.irc.gov.co/documents/d/guest/marco-fiscal-de-mediano-plazo-2023?download=true", "period": "2023"},
+        {"name": "MFMP 2022", "url": "https://www.irc.gov.co/documents/d/guest/marco-fiscal-de-mediano-plazo-2022?download=true", "period": "2022"},
+        {"name": "MFMP 2021", "url": "https://www.irc.gov.co/documents/d/guest/marco-fiscal-de-mediano-plazo-2021?download=true", "period": "2021"},
+        {"name": "MFMP 2020", "url": "https://www.irc.gov.co/documents/d/guest/marco-fiscal-de-mediano-plazo-2020?download=true", "period": "2020"},
+        {"name": "MFMP 2019", "url": "https://www.irc.gov.co/documents/d/guest/mfmp-2019-1?download=true", "period": "2019"},
+        {"name": "MFMP 2018", "url": "https://www.irc.gov.co/documents/d/guest/marco-fiscal-de-mediano-plazo-2018-2?download=true", "period": "2018"},
+        {"name": "MFMP 2015", "url": "https://www.irc.gov.co/documents/d/guest/marco-fiscal-de-mediano-plazo-2015?download=true", "period": "2015"}
+      ]
+    },
+    {
+      "id": "irc-plan-financiero",
+      "name": "Plan Financiero",
+      "source": "irc.gov.co",
+      "format": "PDF",
+      "frequency": "Annual",
+      "description": "Financial Plan documents (2016–2025)",
+      "page": "/conoce-colombia/informacion-fiscal/plan-financiero",
+      "total_files": 11,
+      "files": [
+        {"name": "Plan Financiero 2025", "url": "https://www.irc.gov.co/documents/d/guest/plan-financiero-2025?download=true", "period": "2025"},
+        {"name": "Plan Financiero 2024", "url": "https://www.irc.gov.co/documents/d/guest/plan-financiero-2024-2?download=true", "period": "2024"},
+        {"name": "Plan Financiero 2023", "url": "https://www.irc.gov.co/documents/d/guest/plan-financiero-2023-2?download=true", "period": "2023"},
+        {"name": "Plan Financiero 2022", "url": "https://www.irc.gov.co/documents/d/guest/plan-financiero-2022?download=true", "period": "2022"},
+        {"name": "Plan Financiero 2021", "url": "https://www.irc.gov.co/documents/d/guest/plan-financiero-2021?download=true", "period": "2021"},
+        {"name": "Plan Financiero 2020", "url": "https://www.irc.gov.co/documents/d/guest/plan-financiero-2020?download=true", "period": "2020"},
+        {"name": "Plan Financiero 2019", "url": "https://www.irc.gov.co/documents/d/guest/plan-financiero-2019?download=true", "period": "2019"},
+        {"name": "Plan Financiero 2018", "url": "https://www.irc.gov.co/documents/d/guest/plan-financiero-2018?download=true", "period": "2018"},
+        {"name": "Plan Financiero 2016", "url": "https://www.irc.gov.co/documents/d/guest/plan-financiero-2016?download=true", "period": "2016"},
+        {"name": "Actualización PF 2017", "url": "https://www.irc.gov.co/documents/d/guest/actualizacion-plan-financiero-2017?download=true", "period": "2017"}
+      ]
+    },
+    {
+      "id": "irc-presentaciones",
+      "name": "Investor Presentations",
+      "source": "irc.gov.co",
+      "format": "PDF/PPT",
+      "frequency": "Irregular",
+      "description": "Investor presentations and macro/fiscal outlook documents (2019–2025)",
+      "page": "/presentaciones",
+      "total_files": 20,
+      "files": [
+        {"name": "Investors Meeting Financial Plan Update 12.02.2025", "url": "https://www.irc.gov.co/documents/d/guest/investors-meeting-financial-plan-update-2025-02-12?download=true", "period": "2025"},
+        {"name": "Investors Meeting ministro IRC 18.12.2024", "url": "https://www.irc.gov.co/documents/d/guest/investors-meeting-ministro-irc-18-12-2024?download=true", "period": "2024"},
+        {"name": "Investor Presentation 062023", "url": "https://www.irc.gov.co/documents/d/guest/investor-presentation-062023?download=true", "period": "2023"},
+        {"name": "2023-04-13 Colombia's Economic Perspectives", "url": "https://www.irc.gov.co/documents/d/guest/2023-04-13-colombia-s-economic-perspectives-1?download=true", "period": "2023"},
+        {"name": "2024-03-14 Investors Meeting", "url": "https://www.irc.gov.co/documents/d/guest/2024-03-14-investors-meeting-1?download=true", "period": "2024"},
+        {"name": "20221011 Macroeconomic Overview", "url": "https://www.irc.gov.co/documents/d/guest/20221011-macroeconomic-overview-and-economic-policy-challenges-dc-1?download=true", "period": "2022"},
+        {"name": "Colombia Macro and Fiscal Outlook April 2022", "url": "https://www.irc.gov.co/documents/d/guest/colombia-macro-and-fiscal-outlook-april-2022-1?download=true", "period": "2022"},
+        {"name": "Perspectivas Macro y Fiscal Feb 2022", "url": "https://www.irc.gov.co/documents/d/guest/perspectivas-macro-y-fiscal-feb-2022?download=true", "period": "2022"},
+        {"name": "Actualización PF 2025", "url": "https://www.irc.gov.co/documents/d/guest/actualizacion-plan-financiero-2025-1-?download=true", "period": "2025"},
+        {"name": "Actualización PF 2024", "url": "https://www.irc.gov.co/documents/d/guest/actualizacion-plan-financiero-2024?download=true", "period": "2024"},
+        {"name": "Actualización PF 2023", "url": "https://www.irc.gov.co/documents/d/guest/actualizacion-plan-financiero-2023?download=true", "period": "2023"}
+      ]
+    },
+    {
+      "id": "irc-conpes",
+      "name": "Normativa Deuda Pública — CONPES",
+      "source": "irc.gov.co",
+      "format": "PDF",
+      "frequency": "Irregular",
+      "description": "CONPES documents on public debt regulations",
+      "page": "/es/normativa-deuda-publica",
+      "portlet_instance": "odhp",
+      "folder_id": 1313580,
+      "total_files": 8,
+      "files": [
+        {"name": "CONPES 3107", "url": "https://www.irc.gov.co/documents/d/guest/3107?download=true"},
+        {"name": "CONPES 3133", "url": "https://www.irc.gov.co/documents/d/guest/3133?download=true"},
+        {"name": "CONPES 3760", "url": "https://www.irc.gov.co/documents/d/guest/3760?download=true"},
+        {"name": "CONPES 3800", "url": "https://www.irc.gov.co/documents/d/guest/3800?download=true"},
+        {"name": "CONPES 3807", "url": "https://www.irc.gov.co/documents/d/guest/3807?download=true"},
+        {"name": "CONPES 3961", "url": "https://www.irc.gov.co/documents/d/guest/3961?download=true"},
+        {"name": "CONPES 4000", "url": "https://www.irc.gov.co/documents/d/guest/4000?download=true"},
+        {"name": "CONPES 4028 de 2021", "url": "https://www.irc.gov.co/documents/d/guest/conpes-4028-de-2021?download=true"}
+      ]
+    },
+    {
+      "id": "irc-app-metodologias",
+      "name": "APP Metodologías",
+      "source": "irc.gov.co",
+      "format": "PDF/Excel",
+      "frequency": "Irregular",
+      "description": "Asociaciones Público Privadas (PPP) methodology documents and templates",
+      "page": "/app/metodologia",
+      "portlet_instance": "ccds",
+      "folder_id": 1824293,
+      "total_files": 8,
+      "files": [
+        {"name": "Metodología ASG+R Segunda Edición", "url": "https://www.irc.gov.co/documents/d/guest/metodologia-asg-r_2da-edicion?download=true", "format": "PDF"},
+        {"name": "Formato Metodología ASG+R", "url": "https://www.irc.gov.co/documents/d/guest/formato-asg-r?download=true", "format": "Excel"},
+        {"name": "Parámetros Metodología", "url": "https://www.irc.gov.co/documents/d/guest/20250205-parametros-metodologia?download=true", "format": "Excel"},
+        {"name": "Criterios Específicos Metodología", "url": "https://www.irc.gov.co/documents/d/guest/20250326-criterios-especificos-para-la-aplicacion-de-la-metodologia-1?download=true", "format": "PDF"},
+        {"name": "Formato Sobrecostos", "url": "https://www.irc.gov.co/documents/d/guest/20200630-formato-sobrecostos?download=true", "format": "Excel"},
+        {"name": "Macro Metodología Valoración Obligaciones Contingentes", "url": "https://www.irc.gov.co/documents/d/guest/macro-metodologia-de-valoracion-de-obligaciones-contingentes-en-proyectos-de-infraestructura-caso-comercial-con-informacion-?download=true", "format": "PDF"},
+        {"name": "Circular Externa 031 (Oct 2025)", "url": "https://www.irc.gov.co/documents/d/guest/circular_externa_031_octubre_01_2025-1?download=true", "format": "PDF"}
+      ]
+    }
+  ],
+  "site_map": [
+    {"path": "/", "description": "Homepage"},
+    {"path": "/deuda-publica", "description": "Public Debt hub"},
+    {"path": "/deuda-interna-gnc", "description": "Internal Debt GNC"},
+    {"path": "/deuda-externa-gnc", "description": "External Debt GNC"},
+    {"path": "/perfil-deuda-publica-gnc", "description": "Debt Profile GNC (Power BI + Excel downloads)"},
+    {"path": "/tesoreria", "description": "Treasury"},
+    {"path": "/operaciones-de-tesoreria", "description": "Treasury Operations"},
+    {"path": "/finanzas-sostenibles", "description": "Sustainable Finance"},
+    {"path": "/bonos-verdes-sociales-y-sostenibles", "description": "Green/Social/Sustainable Bonds"},
+    {"path": "/conoce-colombia/informacion-fiscal/marco-fiscal-mediano-plazo", "description": "MFMP"},
+    {"path": "/conoce-colombia/informacion-fiscal/plan-financiero", "description": "Financial Plan"},
+    {"path": "/presentaciones", "description": "Investor Presentations"},
+    {"path": "/es/normativa-deuda-publica", "description": "Debt Regulations (CONPES)"},
+    {"path": "/app/metodologia", "description": "APP Methodologies"}
+  ],
+  "external_references": [
+    {"name": "BanRep", "url": "https://www.banrep.gov.co", "description": "Banco de la República"},
+    {"name": "BVC", "url": "https://www.bvc.com.co", "description": "Bolsa de Valores de Colombia"},
+    {"name": "DANE", "url": "https://www.dane.gov.co", "description": "Statistics agency"},
+    {"name": "DNP", "url": "https://www.dnp.gov.co", "description": "Departamento Nacional de Planeación"},
+    {"name": "MinHacienda", "url": "https://www.minhacienda.gov.co", "description": "Main portal (Radware protected)"}
+  ]
+}
