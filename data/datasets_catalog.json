@@ -1,0 +1,2065 @@
+[
+  {
+    "id": "5phs-yqfw",
+    "name": "Información de Gastos del Presupuesto General de la Nación",
+    "description": "Este conjunto de datos presenta la información del Presupuesto General de la Nación relacionadas con las entidades del Nivel Nacional",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "rubros",
+      "entidades",
+      "compromisos",
+      "pagos"
+    ],
+    "rowCount": null,
+    "createdAt": 1698890983,
+    "rowsUpdatedAt": 1783433366,
+    "publicationDate": 1698893742,
+    "columns": [
+      {
+        "field": "anio",
+        "name": "Año",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "nombremes",
+        "name": "Mes",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "fuente",
+        "name": "Fuente de Financiación",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "sector",
+        "name": "Sector",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "situacion",
+        "name": "Situación de Fondos",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "recursospresupuestales",
+        "name": "Recursos Presupuestales",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigoentidad",
+        "name": "Codigo Entidad",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombreentidad",
+        "name": "Nombre Entidad",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigotipogasto",
+        "name": "Código Tipo Gasto",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombretipogasto",
+        "name": "Nombre Tipo Gasto",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigodetallegasto",
+        "name": "Código Detalle Gasto",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombredetallegasto",
+        "name": "Nombre Detalle del Gasto",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigonivelrubrogasto",
+        "name": "Código Nivel Rubro del Gasto",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombrenivelrubrogasto",
+        "name": "Nombre Nivel Rubro del Gasto",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigocuartonivel",
+        "name": "Código Cuarto Nivel",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombrecuartonivel",
+        "name": "Nombre Cuarto Nivel",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigoquintonivel",
+        "name": "Codigo Quinto Nivel",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombrequintonivel",
+        "name": "Nombre Quinto Nivel",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "vigencia",
+        "name": "Vigencia",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "detalleprogramas",
+        "name": "Detalle de Programas",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "apropiacioninicial",
+        "name": "Apropiación Inicial",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "adiciones",
+        "name": "Adiciones",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "reducciones",
+        "name": "Reducciones",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "apropiacionvigente",
+        "name": "Apropiación Vigente",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "compromisos",
+        "name": "Compromisos",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "obligaciones",
+        "name": "Obligaciones",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "pagos",
+        "name": "Pagos",
+        "dataType": "number",
+        "description": ""
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/5phs-yqfw.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/5phs-yqfw/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/5phs-yqfw/rows.json",
+    "permalink": "https://www.datos.gov.co/d/5phs-yqfw"
+  },
+  {
+    "id": "xjxk-qhsc",
+    "name": "Ejecución Presupuestal del Presupuesto General de la Nación",
+    "description": "Este conjunto de datos presenta la información del Presupuesto General de la Nación relacionadas con las entidades del Nivel Nacional",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "ejecución presupuestal",
+      "presupuesto"
+    ],
+    "rowCount": null,
+    "createdAt": 1672406286,
+    "rowsUpdatedAt": 1783432852,
+    "publicationDate": 1710365195,
+    "columns": [
+      {
+        "field": "fuente_de_financiaci_n",
+        "name": "Fuente de Financiación",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "situacion_de_fondos",
+        "name": "Situacion de Fondos",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "recurso_presupuestal",
+        "name": "Recurso Presupuestal",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigo_del_sector",
+        "name": "Codigo del Sector",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombre_del_sector",
+        "name": "Nombre del Sector",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigo_entidad",
+        "name": "Codigo Entidad",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombre_entidad",
+        "name": "Nombre Entidad",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "apropiaci_n_vigente",
+        "name": "Apropiación Vigente",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "compromisos",
+        "name": "Compromisos",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "obligaciones",
+        "name": "Obligaciones",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "pagos",
+        "name": "Pagos",
+        "dataType": "number",
+        "description": ""
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/xjxk-qhsc.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/xjxk-qhsc/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/xjxk-qhsc/rows.json",
+    "permalink": "https://www.datos.gov.co/d/xjxk-qhsc"
+  },
+  {
+    "id": "bpij-5vy9",
+    "name": "Ejecución Presupuestal del Presupuesto General de la Nación detallada por Rubro Presupuestal",
+    "description": "Este conjunto de datos presenta la información del Presupuesto General de la Nación relacionadas con las entidades del Nivel Nacional a nivel de Rubro Presupuestal a su quinto nivel",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "entidad sector rubro presupuesto"
+    ],
+    "rowCount": null,
+    "createdAt": 1690833141,
+    "rowsUpdatedAt": 1783433181,
+    "publicationDate": 1710365667,
+    "columns": [
+      {
+        "field": "fuente",
+        "name": "Fuente de Financiación",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "situacion",
+        "name": "Situación de Fondos",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "recursospresupuestales",
+        "name": "Recursos´Presupuestales",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigosector",
+        "name": "Codigo Sector",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombresector",
+        "name": "Nombre Sector",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigoentidad",
+        "name": "Codigo Entidad",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombreentidad",
+        "name": "Nombre Entidad",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigoniveluno",
+        "name": "Código Nivel Uno Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombreniveluno",
+        "name": "Nombre Nivel Uno Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigoniveldos",
+        "name": "Código Nivel Dos Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombrenieldos",
+        "name": "Nombre Niel Dos Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigoniveltres",
+        "name": "Código Nivel Tres Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombreniveltres",
+        "name": "Nombre Nivel Tres Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigocuartonivel",
+        "name": "Código Cuarto Nivel Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombrecuartonivel",
+        "name": "Nombre Cuarto Nivel Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "codigoquintonivel",
+        "name": "Código Quinto Nivel Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "nombrequintonivel",
+        "name": "Nombre Quinto Nivel Rubro",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "apropiacionvigente",
+        "name": "Apropiación Vigente",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "compromisos",
+        "name": "Compromisos",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "obligaciones",
+        "name": "Obligaciones",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "pagos",
+        "name": "Pagos",
+        "dataType": "number",
+        "description": ""
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/bpij-5vy9.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/bpij-5vy9/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/bpij-5vy9/rows.json",
+    "permalink": "https://www.datos.gov.co/d/bpij-5vy9"
+  },
+  {
+    "id": "g4qj-2p2e",
+    "name": "Ejecución Presupuestal de Regalías",
+    "description": "Este tablero permite consultar del valor de presupuesto SGR que valor ya se encuentra invertido en proyectos :\n\nConsulte para cada entidad territorial y cada fuente de inversión del SGR, el presupuesto SGR, los recursos aprobados por las diferentes instancias y que ya están asignados en el SPGR y el cálculo estimado del saldo pendiente de asignación presupuestal.\n\nEl saldo pendiente de asignación presupuestal es  indicativo en la medida que se calcula con la información de los recursos aprobados y asignados en el SPGR remitidas  por las secretarias de Planeación o quien haga sus veces a través del Sistema de Presupuesto y Giro de Regalías - SPGR.",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "fondos"
+    ],
+    "rowCount": null,
+    "createdAt": 1715017004,
+    "rowsUpdatedAt": 1784035495,
+    "publicationDate": 1715660501,
+    "columns": [
+      {
+        "field": "vigencia",
+        "name": "Vigencia",
+        "dataType": "text",
+        "description": "Corresponde  a la vigencia del presupuesto bienal del SGR"
+      },
+      {
+        "field": "codigofondo",
+        "name": "CodigoFondo",
+        "dataType": "text",
+        "description": "Corresponde a las Siglas definidas en el SPGR para  la fuente de financiación del Sistema  General de Regalías"
+      },
+      {
+        "field": "nombrefondo",
+        "name": "NombreFondo",
+        "dataType": "text",
+        "description": "Corresponde a la descripción de la fuente de financiación del SGR"
+      },
+      {
+        "field": "codigodanedepartamento",
+        "name": "CodigoDaneDepartamento",
+        "dataType": "text",
+        "description": "Corresponde al Código Dane del Departamento"
+      },
+      {
+        "field": "nombredepartamento",
+        "name": "NombreDepartamento",
+        "dataType": "text",
+        "description": "Corresponde a la descripción del departamento"
+      },
+      {
+        "field": "codigodaneentidad",
+        "name": "CodigoDaneEntidad",
+        "dataType": "text",
+        "description": "Corresponde al codigo Dane del  Entidad Territorial"
+      },
+      {
+        "field": "nombreentidad",
+        "name": "NombreEntidad",
+        "dataType": "text",
+        "description": "Corresponde al codigo Dane del  Entidad Territorial"
+      },
+      {
+        "field": "nombrebolsaregional",
+        "name": "NombreBolsaRegional",
+        "dataType": "text",
+        "description": "Corresponde al nombre de la bosa regional para los OCAD Regionales"
+      },
+      {
+        "field": "presupuestosgrinversion",
+        "name": "PresupuestoSGRInversion",
+        "dataType": "number",
+        "description": "Presupuesto de Inversión vigente SGR"
+      },
+      {
+        "field": "numeroproyectosaprobados",
+        "name": "NumeroProyectosAprobadosAsignadosSPGR",
+        "dataType": "number",
+        "description": " Corresponde al número de proyectos, inflexibilidades , y operaciones de credito de las asignaciones  realizadas por la Instancia correspondiente en el SPGR. El conteo se realiza por numero de proyectos en cada fuente"
+      },
+      {
+        "field": "recursosaprobadosasignadosspgr",
+        "name": "RecursosAprobadosAsignadosSPGR",
+        "dataType": "number",
+        "description": "Corresponde a los recursos asignados por la Instancia correspondiente en el SPGR de los proyectos de inversión que hayan sido aprobados,  inflexibilidades y pago de operaciones de crédito"
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/g4qj-2p2e.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/g4qj-2p2e/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/g4qj-2p2e/rows.json",
+    "permalink": "https://www.datos.gov.co/d/g4qj-2p2e"
+  },
+  {
+    "id": "si7m-btda",
+    "name": "Programa Semilleros de la Legalidad",
+    "description": "En atención al comunicado oficial No. S-2020-000912-OFITE del 27/01/2020 y el plan OFITE_Direccionamiento Tecnológico, categoría DIRECCIONAMIENTO TECNOLÓGICO 2021 > Gobierno_Digital_2021 > Datos_abiertos_2021 > 2do_DA_2021, tarea “Realizar cargue de datos abiertos, en la página www.datos.gov.co de acuerdo a la metodología Min Tic (Guía para el uso y aprovechamiento de Datos Abiertos en Colombia)”",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Seguridad y Defensa",
+    "tags": [
+      "policía nacional",
+      "policia nacional",
+      "policía",
+      "policia",
+      "policía fiscal"
+    ],
+    "rowCount": null,
+    "createdAt": 1672691967,
+    "rowsUpdatedAt": 1672694034,
+    "publicationDate": 1672694040,
+    "columns": [
+      {
+        "field": "trimestre",
+        "name": "TRIMESTRE",
+        "dataType": "text",
+        "description": ""
+      },
+      {
+        "field": "numero_de_actividades",
+        "name": "NUMERO DE ACTIVIDADES",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "total_ni_os_as",
+        "name": "TOTAL NIÑOS (AS)",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "padres",
+        "name": "PADRES",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "docente_otro",
+        "name": "DOCENTE / OTRO",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "public",
+        "name": "# PUBLIC",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "likes",
+        "name": "LIKES",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "compartidos",
+        "name": "COMPARTIDOS",
+        "dataType": "number",
+        "description": ""
+      },
+      {
+        "field": "comentarios",
+        "name": "COMENTARIOS",
+        "dataType": "number",
+        "description": ""
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/si7m-btda.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/si7m-btda/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/si7m-btda/rows.json",
+    "permalink": "https://www.datos.gov.co/d/si7m-btda"
+  },
+  {
+    "id": "e624-d9uy",
+    "name": "Situación de Caja para Regalías",
+    "description": "En este tablero puede tener una visión general de los recursos aprobados y situación de caja.\n \nConsulte para cada entidad territorial y cada fuente de inversión del SGR, el Presupuesto de inversión: SGR vigente , el Valor Recaudo a la fecha, de los ingresos corrientes,  y el  saldo de  caja al 31 de diciembre de 2022, los recursos aprobados por las diferentes instancias y que ya están asignados en el SPGR . el  valor de los pagos desembolsados por la Subdirección de Operaciones de la Dirección del Tesoro Nacional de las ordenes de pago que autorizo la entidad ejecutora, el Saldo en caja que Corresponde a la diferencia entre el valor recaudado de recursos de inversión menos los pagos efectuados.\n \nLa Caja Disponible sin aprobar: Corresponde a la diferencia entre los recursos asignados por la Instancia correspondiente en el SPGR  y los pagos efectuados a traves del SPGR. Es el valor en caja disponible sin aprobar a la fecha teniendo en cuenta los recursos asignados en el SPGR. En caso de que el valor sea negativo significa que  el total del presupuesto aprobado no tiene disponibilidad de caja.",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "fondos"
+    ],
+    "rowCount": null,
+    "createdAt": 1715017622,
+    "rowsUpdatedAt": 1784037985,
+    "publicationDate": 1715658093,
+    "columns": [
+      {
+        "field": "vigencia",
+        "name": "Vigencia",
+        "dataType": "text",
+        "description": "Corresponde  a la vigencia del presupuesto bienal del SGR"
+      },
+      {
+        "field": "codigofondo",
+        "name": "CodigoFondo",
+        "dataType": "text",
+        "description": "Corresponde a las Siglas definidas en el SPGR para  la fuente de financiación del Sistema  General de Regalías"
+      },
+      {
+        "field": "nombrefondo",
+        "name": "NombreFondo",
+        "dataType": "text",
+        "description": "Corresponde a la descripción de la fuente de financiación del SGR"
+      },
+      {
+        "field": "codigodanedepartamento",
+        "name": "CodigoDaneDepartamento",
+        "dataType": "text",
+        "description": "Corresponde al código Dane del Departamento"
+      },
+      {
+        "field": "nombredepartamento",
+        "name": "NombreDepartamento",
+        "dataType": "text",
+        "description": "Corresponde a la descripción del departamento"
+      },
+      {
+        "field": "codigodaneentidad",
+        "name": "CodigoDaneEntidad",
+        "dataType": "text",
+        "description": "Corresponde al código Dane del  Entidad Territorial"
+      },
+      {
+        "field": "nombreentidad",
+        "name": "NombreEntidad",
+        "dataType": "text",
+        "description": "Corresponde al nombre Dane del  Entidad Territorial"
+      },
+      {
+        "field": "nombrebolsaregional",
+        "name": "NombreBolsaRegional",
+        "dataType": "text",
+        "description": "Corresponde al nombre de la bosa regional para los OCAD Regionales"
+      },
+      {
+        "field": "presupuestosgrinversion",
+        "name": "PresupuestoSGRInversion",
+        "dataType": "number",
+        "description": " Presupuesto de inversión: corresponde al  Presupuesto de Inversión SGR vigente "
+      },
+      {
+        "field": "valorrecaudo",
+        "name": "ValorRecaudo",
+        "dataType": "number",
+        "description": "Valor Recaudo: Corresponde al Valor recaudado  a la fecha, de los ingresos corrientes,  y el  saldo de  caja al 31 de diciembre de 2022"
+      },
+      {
+        "field": "recursosaprobadosasignadosspgr",
+        "name": "RecursosAprobadosAsignadosSPGR",
+        "dataType": "number",
+        "description": "Recursos aprobados y asignados en SPGR: Corresponde a los recursos asignados por la Instancia correspondiente en el SPGR de los proyectos de inversión que hayan sido aprobados,  inflexibilidades y pago de operaciones de crédito"
+      },
+      {
+        "field": "porcentajeaprobadoasigna",
+        "name": "PorcentajeAprobadoAsignadoPresupuesto",
+        "dataType": "number",
+        "description": "% Recaudado del presupuesto"
+      },
+      {
+        "field": "totalpagado",
+        "name": "TotalPagado",
+        "dataType": "number",
+        "description": "Total Pagado: Corresponde al valor de los pagos desembolsados por la Subdirección de Operaciones de la Dirección del Tesoro Nacional de las ordenes de pago que autorizo la entidad ejecutora"
+      },
+      {
+        "field": "saldocaja",
+        "name": "SaldoCaja",
+        "dataType": "number",
+        "description": " Saldo en caja: Es el saldo en caja a la fecha. Corresponde a la diferencia entre el valor recaudado de recursos de inversión menos los pagos efectuados "
+      },
+      {
+        "field": "cajadisponibledescontand",
+        "name": "CajaDisponibleDescontandoPagosPendientes",
+        "dataType": "number",
+        "description": " Corresponde a la diferencia entre los recursos asignados por la Instancia correspondiente en el SPGR  y los pagos efectuados a traves del SPGR. Es el valor en caja disponible sin aprobar a la fecha teniendo en cuenta los recursos asignados en el SPGR. En caso de que el valor sea negativo significa que  el total del presupuesto aprobado no tiene disponibilidad de caja "
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/e624-d9uy.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/e624-d9uy/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/e624-d9uy/rows.json",
+    "permalink": "https://www.datos.gov.co/d/e624-d9uy"
+  },
+  {
+    "id": "br9a-gygu",
+    "name": "Ejecución Financiera de Regalías",
+    "description": "Este tablero permite consultar como se están ejecutando los recursos aprobados y asignados en SPGR.\n \nConsulte para cada entidad territorial y cada fuente de inversión del SGR los recursos aprobados por las diferentes instancias y que ya están asignados en el SPGR, el valor  de los CDPs de los proyectos registrados por la entidad ejecutora, el valor de los RPs (registros presupuestales de contratos o actos administrativos de decretan el gasto) de los proyectos registrados por la entidad ejecutora y el valor de los pagos desembolsados por la Subdirección de Operaciones de la Dirección del Tesoro Nacional de las órdenes de pago que autorizo la entidad ejecutora.",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "fondos"
+    ],
+    "rowCount": null,
+    "createdAt": 1715017218,
+    "rowsUpdatedAt": 1784035706,
+    "publicationDate": 1725460156,
+    "columns": [
+      {
+        "field": "vigencia",
+        "name": "Vigencia",
+        "dataType": "text",
+        "description": "Corresponde  a la vigencia del presupuesto bienal del SGR"
+      },
+      {
+        "field": "codigofondo",
+        "name": "CodigoFondo",
+        "dataType": "text",
+        "description": "Corresponde a las Siglas definidas en el SPGR para  la fuente de financiación del Sistema  General de Regalías"
+      },
+      {
+        "field": "nombrefondo",
+        "name": "NombreFondo",
+        "dataType": "text",
+        "description": "Corresponde a la descripción de la fuente de financiación del SGR"
+      },
+      {
+        "field": "codigodanedepartamento",
+        "name": "CodigoDaneDepartamento",
+        "dataType": "text",
+        "description": "Corresponde al código Dane del Departamento"
+      },
+      {
+        "field": "nombredepartamento",
+        "name": "NombreDepartamento",
+        "dataType": "text",
+        "description": "Corresponde a la descripción del departamento"
+      },
+      {
+        "field": "codigodaneentidad",
+        "name": "CodigoDaneEntidad",
+        "dataType": "text",
+        "description": "Corresponde al código Dane del  Entidad Territorial"
+      },
+      {
+        "field": "nombreentidad",
+        "name": "NombreEntidad",
+        "dataType": "text",
+        "description": "Corresponde al nombre Dane del  Entidad Territorial"
+      },
+      {
+        "field": "nombrebolsaregional",
+        "name": "NombreBolsaRegional",
+        "dataType": "text",
+        "description": "Corresponde al nombre de la bosa regional para los OCAD Regionales"
+      },
+      {
+        "field": "codigobpin",
+        "name": "CodigoBPIN",
+        "dataType": "text",
+        "description": "Corresponde al código del proyecto asignado en el Banco de Proyectos de Inversión BPIN"
+      },
+      {
+        "field": "nombreproyecto",
+        "name": "NombreProyecto",
+        "dataType": "text",
+        "description": "Nombre del Proyecto"
+      },
+      {
+        "field": "recursosaprobadosasignadosspgr",
+        "name": "RecursosAprobadosAsignadosSPGR",
+        "dataType": "number",
+        "description": "Corresponde a los recursos asignados por la Instancia correspondiente en el SPGR de los proyectos de inversión que hayan sido aprobados,  inflexibilidades y pago de operaciones de crédito"
+      },
+      {
+        "field": "apropiacioncdp",
+        "name": "ApropiacionCDP",
+        "dataType": "number",
+        "description": " Corresponde al valor de los CDP de los proyectos registrados por la entidad ejecutora"
+      },
+      {
+        "field": "apropiacionrp",
+        "name": "ApropiacionRP",
+        "dataType": "number",
+        "description": "Corresponde al valor de los RPs (registros presupuestales de contratos o actos administrativos de decretan el gasto) de los proyectos registrados por la entidad ejecutora"
+      },
+      {
+        "field": "apropiacionpagada",
+        "name": "ApropiacionPagada",
+        "dataType": "number",
+        "description": "Corresponde al valor de los pagos desembolsados por la Subdirección de Operaciones de la Dirección del Tesoro Nacional de las ordenes de pago que autorizo la entidad ejecutora"
+      },
+      {
+        "field": "porcentajeejecutadopresu",
+        "name": "PorcentajeEjecutadoPresupuestoAprobado",
+        "dataType": "number",
+        "description": "Corresponde  al %  de recursos pagados en el  SPGR   frente a los recursos asignados por la Instancia correspondiente en el SPGR"
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/br9a-gygu.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/br9a-gygu/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/br9a-gygu/rows.json",
+    "permalink": "https://www.datos.gov.co/d/br9a-gygu"
+  },
+  {
+    "id": "xb6a-jh3a",
+    "name": "Comportamiento de los Ingresos Corrientes para Regalías",
+    "description": "Este tablero permite visualizar el comportamiento del recaudo corriente frente a lo proyectado en el Plan Bienal de Caja acumulado.\n\nConsulte para cada entidad territorial y cada fuente de inversión del SGR, el comportamiento del recaudo de los ingresos corrientes acumulados al mes de referencia frente a lo estimado de recaudo según las proyecciones del Plan Bienal de Caja – PBC",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "fondos"
+    ],
+    "rowCount": null,
+    "createdAt": 1715654009,
+    "rowsUpdatedAt": 1784036016,
+    "publicationDate": 1715655836,
+    "columns": [
+      {
+        "field": "vigencia",
+        "name": "Vigencia",
+        "dataType": "text",
+        "description": "Corresponde  a la vigencia del presupuesto bienal del SGR"
+      },
+      {
+        "field": "codigofondo",
+        "name": "CodigoFondo",
+        "dataType": "text",
+        "description": "Corresponde a las Siglas definidas en el SPGR para  la fuente de financiación del Sistema  General de Regalías"
+      },
+      {
+        "field": "nombrefondo",
+        "name": "NombreFondo",
+        "dataType": "text",
+        "description": "Corresponde a la descripción de la fuente de financiación del SGR"
+      },
+      {
+        "field": "codigodanedepartamento",
+        "name": "CodigoDaneDepartamento",
+        "dataType": "text",
+        "description": "Corresponde al código Dane del Departamento"
+      },
+      {
+        "field": "nombredepartamento",
+        "name": "NombreDepartamento",
+        "dataType": "text",
+        "description": "Corresponde a la descripción del departamento"
+      },
+      {
+        "field": "codigodaneentidad",
+        "name": "CodigoDaneEntidad",
+        "dataType": "text",
+        "description": "Corresponde al código Dane del  Entidad Territorial"
+      },
+      {
+        "field": "nombreentidad",
+        "name": "NombreEntidad",
+        "dataType": "text",
+        "description": "Corresponde al código Dane del  Entidad Territorial"
+      },
+      {
+        "field": "nombrebolsaregional",
+        "name": "NombreBolsaRegional",
+        "dataType": "text",
+        "description": "Corresponde al nombre de la bosa regional para los OCAD Regionales"
+      },
+      {
+        "field": "numeromesbienio",
+        "name": "NumeroMesBienio",
+        "dataType": "number",
+        "description": "Corresponde al numero del mes acumulado del bienio (Entre 1 y 24)  del que se presenta la información consultada"
+      },
+      {
+        "field": "nombremesbienio",
+        "name": "NombreMesBienio",
+        "dataType": "text",
+        "description": "Corresponde al nombre del mes, para identificar si corresponde al año 1 o año 2 , guiese por el numero del mes(El conteo es entre 1 y 24 meses que tiene el  bienio)"
+      },
+      {
+        "field": "pbcacumuladomes",
+        "name": "PBCAcumuladoMes",
+        "dataType": "number",
+        "description": " PBC Acumulado al mes: El Plan Bienal de Caja - PBC,  corresponde a la proyección mes a mes de lo que se espera recaudar en cada uno de los recursos presupuestales de acuerdo al presupuesto de ingresos corrientes al corte del mes que se indica."
+      },
+      {
+        "field": "iacacumladomesrecaudoaforado",
+        "name": "IACAcumladoMesRecaudoAforado",
+        "dataType": "number",
+        "description": "IAC Acumulado al mes: La Instrucción de Abono a Cuenta - IAC Corresponde a los ingresos corrientes efectivamente recaudados al corte del mes que se indica."
+      },
+      {
+        "field": "porcentajepbcrecaudo",
+        "name": "PorcentajePBCRecaudo",
+        "dataType": "number",
+        "description": "% PBC/ Recaudo: un %Recaudo/PBC menor al 100% indica que el recaudo acumulado al mes de corte es menor al valor esperado en el Plan Bienal de Caja - PBC"
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/xb6a-jh3a.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/xb6a-jh3a/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/xb6a-jh3a/rows.json",
+    "permalink": "https://www.datos.gov.co/d/xb6a-jh3a"
+  },
+  {
+    "id": "22f3-gynv",
+    "name": "Ingresos por Vigencia",
+    "description": "Ingresos  generales de la nación por vigencia",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "rubros"
+    ],
+    "rowCount": null,
+    "createdAt": 1749767104,
+    "rowsUpdatedAt": 1782253999,
+    "publicationDate": 1749768431,
+    "columns": [
+      {
+        "field": "anio",
+        "name": "Anio",
+        "dataType": "text",
+        "description": "Hace referencia al período comprendido entre el 1 de enero hasta el 31 de diciembre que corresponde a una Vigencia Fiscal"
+      },
+      {
+        "field": "numeromes",
+        "name": "NumeroMes",
+        "dataType": "text",
+        "description": "Número del mes sobre el cual se hace la consulta."
+      },
+      {
+        "field": "nombremes",
+        "name": "NombreMes",
+        "dataType": "text",
+        "description": "Descripción del mes sobre el cual se hace la consulta."
+      },
+      {
+        "field": "codigorubro",
+        "name": "CodigoRubro",
+        "dataType": "text",
+        "description": "Código para identificar el rubro teniendo en cuenta los niveles de desagregación."
+      },
+      {
+        "field": "nombrerubro",
+        "name": "NombreRubro",
+        "dataType": "text",
+        "description": "Descripción de la cuenta especifica que agrupa los ingresos por cierto concepto."
+      },
+      {
+        "field": "niveluno",
+        "name": "NivelUno",
+        "dataType": "text",
+        "description": "Define el concepto del cual proviene el recurso de la nación ( Ing. Corrientes, Rec. Capital, Fondos Especiales ó  Contribuciones Parafiscales) y separa la fuente (1,2,5,6 Recursos Nación y 3 Recursos Propios de Estapúblicos)"
+      },
+      {
+        "field": "nombreniveluno",
+        "name": "NombreNivelUno",
+        "dataType": "text",
+        "description": "Descripción del concepto del cual proviene el recurso de la nación ( Ing. Corrientes, Rec. Capital, Fondos Especiales ó  Contribuciones Parafiscales) y separa la fuente (1,2,5,6 Recursos Nación y 3 Recursos Propios de Estapúblicos)"
+      },
+      {
+        "field": "niveldos",
+        "name": "NivelDos",
+        "dataType": "text",
+        "description": "Define el concepto del cual provienen los Recursos propios de los Establecimientos Públicos ( Recursos propios, Fondos Especiales y Contribuciones Parafiscales)"
+      },
+      {
+        "field": "nombreniveldos",
+        "name": "NombreNivelDos",
+        "dataType": "text",
+        "description": "Descripción del concepto del cual provienen los Recursos propios de los Establecimientos Públicos ( Recursos propios, Fondos Especiales y Contribuciones Parafiscales)"
+      },
+      {
+        "field": "niveltres",
+        "name": "NivelTres",
+        "dataType": "text",
+        "description": "Define cada uno de los Fondos Especiales sin importar su fuente, Nación o Propios."
+      },
+      {
+        "field": "nombreniveltres",
+        "name": "NombreNivelTres",
+        "dataType": "text",
+        "description": "Descripción de cada uno de los Fondos Especiales sin importar su fuente, Nación o Propios."
+      },
+      {
+        "field": "nivelcuatro",
+        "name": "NivelCuatro",
+        "dataType": "text",
+        "description": "Define la parte perteneciente a Ingresos corrientes o Recursos de Capital de cada uno de los Fondos Especiales y Contribuciones Parafiscales sin importar su fuente."
+      },
+      {
+        "field": "nombrenivelcuatro",
+        "name": "NombreNivelCuatro",
+        "dataType": "text",
+        "description": "Descripción de la parte perteneciente a Ingresos corrientes o Recursos de Capital de cada uno de los Fondos Especiales y Contribuciones Parafiscales sin importar su fuente."
+      },
+      {
+        "field": "nivelcinco",
+        "name": "NivelCinco",
+        "dataType": "text",
+        "description": "Define la naturaleza de los ingresos corrientes entre tributarios y no tributarios. Además desagrega los recursos de capital entre sus diferentes conceptos como excedentes, rendimientos financieros , disposición de activos, etc."
+      },
+      {
+        "field": "nombrenivelcinco",
+        "name": "NombreNivelCinco",
+        "dataType": "text",
+        "description": "Descripción de la naturaleza de los ingresos corrientes entre tributarios y no tributarios. Además desagrega los recursos de capital entre sus diferentes conceptos como excedentes, rendimientos financieros , disposición de activos, etc."
+      },
+      {
+        "field": "nivelseis",
+        "name": "NivelSeis",
+        "dataType": "text",
+        "description": "Desagregación al nivel de Impuestos directos e indirectos para los Ingresos Corrientes. En cuanto a recursos de capital se definen las subcuentas de rendimientos "
+      },
+      {
+        "field": "nombrenivelseis",
+        "name": "NombreNivelSeis",
+        "dataType": "text",
+        "description": "Descripción de desagregación al nivel de Impuestos directos e indirectos para los Ingresos Corrientes. En cuanto a recursos de capital se definen las subcuentas de rendimientos "
+      },
+      {
+        "field": "nivelsiete",
+        "name": "NivelSiete",
+        "dataType": "text",
+        "description": "Maxima desagregación de impuestos. Desagregación de las contribuciones, tasas y derechos de recursos de la nación. Desagregación de intereses, ganancias y donaciónes de recursos de Establecimientos Públicos"
+      },
+      {
+        "field": "nombrenivelsiete",
+        "name": "NombreNivelSiete",
+        "dataType": "text",
+        "description": "Descripción de la maxima desagregación de impuestos. Desagregación de las contribuciones, tasas y derechos de recursos de la nación. Desagregación de intereses, ganancias y donaciónes de recursos de Establecimientos Públicos"
+      },
+      {
+        "field": "nivelocho",
+        "name": "NivelOcho",
+        "dataType": "text",
+        "description": "Desagregación de Salud en Contribuciones Parafiscales de la Nación. Desagregación tipo de producción de Establecimientos Públicos."
+      },
+      {
+        "field": "nombrenivelocho",
+        "name": "NombreNivelOcho",
+        "dataType": "text",
+        "description": "Descripción de la desagregación de Salud en Contribuciones Parafiscales de la Nación. Desagregación tipo de producción de Establecimientos Públicos."
+      },
+      {
+        "field": "nivelnueve",
+        "name": "NivelNueve",
+        "dataType": "text",
+        "description": "Desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios y productos."
+      },
+      {
+        "field": "nombrenivelnueve",
+        "name": "NombreNivelNueve",
+        "dataType": "text",
+        "description": "Descripción de la desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios y productos."
+      },
+      {
+        "field": "niveldiez",
+        "name": "NivelDiez",
+        "dataType": "text",
+        "description": "Desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios especializados."
+      },
+      {
+        "field": "nombreniveldiez",
+        "name": "NombreNivelDiez",
+        "dataType": "text",
+        "description": "Descripción de la desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios especializados."
+      },
+      {
+        "field": "codigofuente",
+        "name": "CodigoFuente",
+        "dataType": "text",
+        "description": "Código para identificar de donde proviene el recurso."
+      },
+      {
+        "field": "nombrefuente",
+        "name": "NombreFuente",
+        "dataType": "text",
+        "description": "Identifica si el ingreso proviene de Nación o Propios."
+      },
+      {
+        "field": "codigosituacion",
+        "name": "CodigoSituacion",
+        "dataType": "text",
+        "description": "Código para identificar la situación de fondos."
+      },
+      {
+        "field": "nombresituacion",
+        "name": "NombreSituacion",
+        "dataType": "text",
+        "description": "Identifica si es Con Situación de Fondos o Sin Situación de Fondos"
+      },
+      {
+        "field": "aforoinicial",
+        "name": "AforoInicial",
+        "dataType": "number",
+        "description": "Monto estimado del recaudo de ingresos en la Ley de rentas y recursos de capital  para atender los gastos contenidos en la Ley anual de presupuesto."
+      },
+      {
+        "field": "modificacionesaforo",
+        "name": "ModificacionesAforo",
+        "dataType": "number",
+        "description": "Afectaciones en el aforo que buscan adecuar el presupuesto a variaciones significativas, por razones imprevistas durante una vigencia."
+      },
+      {
+        "field": "aforovigente",
+        "name": "AforoVigente",
+        "dataType": "number",
+        "description": "Es el aforo inicial más las modificaciones."
+      },
+      {
+        "field": "saldocausado",
+        "name": "SaldoCausado",
+        "dataType": "number",
+        "description": "Valor del saldo causado"
+      },
+      {
+        "field": "recaudoefectivoperiodo",
+        "name": "RecaudoEfectivoPeriodo",
+        "dataType": "number",
+        "description": "Valor del recaudo del mes"
+      },
+      {
+        "field": "saldoacreedor",
+        "name": "SaldoAcreedor",
+        "dataType": "number",
+        "description": "Valor del saldo acreedor"
+      },
+      {
+        "field": "devolucionespagadasacumulado",
+        "name": "DevolucionesPagadasAcumulado",
+        "dataType": "number",
+        "description": "Valor de las devoluciones acumuladas"
+      },
+      {
+        "field": "recaudoefectivoacumulado",
+        "name": "RecaudoEfectivoAcumulado",
+        "dataType": "number",
+        "description": "Valor del recaudo total descontadas las devoluciones."
+      },
+      {
+        "field": "saldoaforoporrecaudar",
+        "name": "SaldoAforoPorRecaudar",
+        "dataType": "number",
+        "description": "Valor de la diferencia entre aforo vigente y recaudo acumulado"
+      },
+      {
+        "field": "recaudoefectivoacumuladoneto",
+        "name": "RecaudoEfectivoAcumuladoNeto",
+        "dataType": "number",
+        "description": "Valor del recaudo acumulado neto, se descuentan las devoluciones"
+      },
+      {
+        "field": "nivel",
+        "name": "Nivel",
+        "dataType": "text",
+        "description": "Hace referencia al nivel interno para presentación de datos, Número de nivel de agregación de los datos de la consulta"
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/22f3-gynv.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/22f3-gynv/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/22f3-gynv/rows.json",
+    "permalink": "https://www.datos.gov.co/d/22f3-gynv"
+  },
+  {
+    "id": "hebe-yxy5",
+    "name": "Ingresos Desagregados Lineal",
+    "description": "Ingresos Desagregados linealmente de la nación",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "rubros"
+    ],
+    "rowCount": null,
+    "createdAt": 1749218864,
+    "rowsUpdatedAt": 1782255996,
+    "publicationDate": 1750191994,
+    "columns": [
+      {
+        "field": "anio",
+        "name": "Anio",
+        "dataType": "text",
+        "description": "Hace referencia al período comprendido entre el 1 de enero hasta el 31 de diciembre que corresponde a una Vigencia Fiscal"
+      },
+      {
+        "field": "numeromes",
+        "name": "NumeroMes",
+        "dataType": "text",
+        "description": "Número del mes sobre el cual se hace la consulta"
+      },
+      {
+        "field": "nombremes",
+        "name": "NombreMes",
+        "dataType": "text",
+        "description": "Nombre del mes sobre el cual se hace la consulta"
+      },
+      {
+        "field": "codigoentidad",
+        "name": "CodigoEntidad",
+        "dataType": "text",
+        "description": "Código de identificación de las Unidades Ejecutoras"
+      },
+      {
+        "field": "nombreentidadcatalogo",
+        "name": "NombreEntidadCatalogo",
+        "dataType": "text",
+        "description": "Identificación de cada una de las unidades institucionales que conforman el Presupuesto General de la Nación de acuerdo con las partes que lo constituyen"
+      },
+      {
+        "field": "nombreentidadsector",
+        "name": "NombreEntidadSector",
+        "dataType": "text",
+        "description": "Grupo de entidades que tienen actividades misionales comunes que guardan unidad"
+      },
+      {
+        "field": "codigorubro",
+        "name": "CodigoRubro",
+        "dataType": "text",
+        "description": "Código para identificar el rubro teniendo en cuenta los niveles de desagregación."
+      },
+      {
+        "field": "nombrerubro",
+        "name": "NombreRubro",
+        "dataType": "text",
+        "description": "Descripción de la cuenta especifica que agrupa los ingresos por cierto concepto."
+      },
+      {
+        "field": "idfuente",
+        "name": "IdFuente",
+        "dataType": "text",
+        "description": "Hace referencia al código del ingreso que financia el gasto"
+      },
+      {
+        "field": "nombreidfuente",
+        "name": "NombreIdFuente",
+        "dataType": "text",
+        "description": "Hace referencia al origen del ingreso que financia el gasto, puede ser Nación o propios."
+      },
+      {
+        "field": "cant_conceptoingreso",
+        "name": "Cant_ConceptoIngreso",
+        "dataType": "text",
+        "description": "Número de caracteres del ConceptoIngreso"
+      },
+      {
+        "field": "tipoconcepto",
+        "name": "TipoConcepto",
+        "dataType": "text",
+        "description": "Origen de los datos Agregación o Captura"
+      },
+      {
+        "field": "conceptoingreso",
+        "name": "ConceptoIngreso",
+        "dataType": "text",
+        "description": "Código desagregado del concepto de ingreso"
+      },
+      {
+        "field": "nombreconceptoingreso",
+        "name": "NombreConceptoIngreso",
+        "dataType": "text",
+        "description": "Nombre de código desagregado del concepto de ingreso"
+      },
+      {
+        "field": "niveluno",
+        "name": "NivelUno",
+        "dataType": "text",
+        "description": "Identificación que define el concepto del cual proviene el recurso de la nación ( Ing. Corrientes, Rec. Capital, Fondos Especiales ó  Contribuciones Parafiscales) y separa la fuente (1,2,5,6 Recursos Nación y 3 Recursos Propios de Estapúblicos)"
+      },
+      {
+        "field": "nombreniveluno",
+        "name": "NombreNivelUno",
+        "dataType": "text",
+        "description": "Es el nombre del concepto del cual proviene el recurso de la nación"
+      },
+      {
+        "field": "niveldos",
+        "name": "NivelDos",
+        "dataType": "text",
+        "description": "Identificación que Define el concepto del cual provienen los Recursos propios de los Establecimientos Públicos ( Recursos propios, Fondos Especiales y Contribuciones Parafiscales)"
+      },
+      {
+        "field": "nombreniveldos",
+        "name": "NombreNivelDos",
+        "dataType": "text",
+        "description": "Es el nombre del concepto del cual provienen los Recursos Propios de los Establecimientos Públicos"
+      },
+      {
+        "field": "niveltres",
+        "name": "NivelTres",
+        "dataType": "text",
+        "description": "Define cada uno de los Fondos Especiales sin importar su fuente, Nación o Propios."
+      },
+      {
+        "field": "nombreniveltres",
+        "name": "NombreNivelTres",
+        "dataType": "text",
+        "description": "Es el nombre de cada uno de los Fondos Especiales"
+      },
+      {
+        "field": "nivelcuatro",
+        "name": "NivelCuatro",
+        "dataType": "text",
+        "description": "Define la parte perteneciente a Ingresos corrientes o Recursos de Capital de cada uno de los Fondos Especiales y Contribuciones Parafiscales sin importar su fuente."
+      },
+      {
+        "field": "nombrenivelcuatro",
+        "name": "NombreNivelCuatro",
+        "dataType": "text",
+        "description": "Hace referencia a la parte perteneciente a Ingresos corrientes o Recursos de Capital de cada uno de los Fondos Especiales y Contribuciones Parafiscales sin importar su fuente."
+      },
+      {
+        "field": "nivelcinco",
+        "name": "NivelCinco",
+        "dataType": "text",
+        "description": "Define la naturaleza de los ingresos corrientes entre tributarios y no tributarios. Además desagrega los recursos de capital entre sus diferentes conceptos como excedentes, rendimientos financieros , disposición de activos, etc."
+      },
+      {
+        "field": "nombrenivelcinco",
+        "name": "NombreNivelCinco",
+        "dataType": "text",
+        "description": "Define la naturaleza de los ingresos corrientes entre tributarios y no tributarios. Además desagrega los recursos de capital entre sus diferentes conceptos como excedentes, rendimientos financieros , disposición de activos, etc."
+      },
+      {
+        "field": "nivelseis",
+        "name": "NivelSeis",
+        "dataType": "text",
+        "description": "Desagregación al nivel de Impuestos directos e indirectos para los Ingresos Corrientes. En cuanto a recursos de capital se definen las subcuentas de rendimientos "
+      },
+      {
+        "field": "nombrenivelseis",
+        "name": "NombreNivelSeis",
+        "dataType": "text",
+        "description": "Denominación de la desagregación al nivel de Impuestos directos e indirectos para los Ingresos Corrientes. En cuanto a recursos de capital se definen las subcuentas de rendimientos "
+      },
+      {
+        "field": "nivelsiete",
+        "name": "NivelSiete",
+        "dataType": "text",
+        "description": "Maxima desagregación de impuestos. Desagregación de las contribuciones, tasas y derechos de recursos de la nación. Desagregación de intereses, ganancias y donaciónes de recursos de Establecimientos Públicos"
+      },
+      {
+        "field": "nombrenivelsiete",
+        "name": "NombreNivelSiete",
+        "dataType": "text",
+        "description": "Denominación de la maxima desagregación de impuestos. Desagregación de las contribuciones, tasas y derechos de recursos de la nación. Desagregación de intereses, ganancias y donaciónes de recursos de Establecimientos Públicos"
+      },
+      {
+        "field": "nivelocho",
+        "name": "NivelOcho",
+        "dataType": "text",
+        "description": "Desagregación de Salud en Contribuciones Parafiscales de la Nación. Desagregación tipo de producción de Establecimientos Públicos."
+      },
+      {
+        "field": "nombrenivelocho",
+        "name": "NombreNivelOcho",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de Salud en Contribuciones Parafiscales de la Nación. Desagregación tipo de producción de Establecimientos Públicos."
+      },
+      {
+        "field": "nivelnueve",
+        "name": "NivelNueve",
+        "dataType": "text",
+        "description": "Desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios y productos."
+      },
+      {
+        "field": "nombrenivelnueve",
+        "name": "NombreNivelNueve",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios y productos."
+      },
+      {
+        "field": "niveldiez",
+        "name": "NivelDiez",
+        "dataType": "text",
+        "description": "Desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios especializados."
+      },
+      {
+        "field": "nombreniveldiez",
+        "name": "NombreNivelDiez",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios especializados."
+      },
+      {
+        "field": "nivelonce",
+        "name": "NivelOnce",
+        "dataType": "text",
+        "description": "Desagregación de ingresos Nación y Propios por servicios de arrendamiento, educación, salud y otros servicios sociales"
+      },
+      {
+        "field": "nombrenivelonce",
+        "name": "NombreNivelOnce",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de ingresos Nación y Propios por servicios de arrendamiento, educación, salud y otros servicios sociales"
+      },
+      {
+        "field": "niveldoce",
+        "name": "NivelDoce",
+        "dataType": "text",
+        "description": "Desagregación de ingresos Nación y Propios por servicios de educativos, de salud y de copia y reproducción."
+      },
+      {
+        "field": "nombreniveldoce",
+        "name": "NombreNivelDoce",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de ingresos Nación y Propios por servicios de educativos, de salud y de copia y reproducción."
+      },
+      {
+        "field": "codigofuente",
+        "name": "CodigoFuente",
+        "dataType": "text",
+        "description": "Código para identificar de donde proviene el recurso."
+      },
+      {
+        "field": "nombrefuente",
+        "name": "NombreFuente",
+        "dataType": "text",
+        "description": "Identifica si el ingreso proviene de Nación o Propios."
+      },
+      {
+        "field": "codigosituacion",
+        "name": "CodigoSituacion",
+        "dataType": "text",
+        "description": "Código para identificar la situación de fondos."
+      },
+      {
+        "field": "nombresituacion",
+        "name": "NombreSituacion",
+        "dataType": "text",
+        "description": "Identifica si es Con Situación de Fondos o Sin Situación de Fondos"
+      },
+      {
+        "field": "autonomia",
+        "name": "Autonomia",
+        "dataType": "text",
+        "description": "Clasificación de la unidad ejecutora (central o estapúblico)"
+      },
+      {
+        "field": "cuin",
+        "name": "CUIN",
+        "dataType": "text",
+        "description": "Código Único Institucional (CUIN), el cual es un código que se usa para identificar y clasificar a las entidades públicas en el país"
+      },
+      {
+        "field": "ecp",
+        "name": "ECP",
+        "dataType": "text",
+        "description": "Siglas de las Entidades Contables Públicas"
+      },
+      {
+        "field": "nivelterritorial",
+        "name": "NivelTerritorial",
+        "dataType": "text",
+        "description": "Clasificacion territorial de la unidad ejecutora"
+      },
+      {
+        "field": "sector",
+        "name": "Sector",
+        "dataType": "text",
+        "description": "Grupo de entidades que tienen actividades misionales comunes que guardan unidad"
+      },
+      {
+        "field": "sectorinstitucional",
+        "name": "SectorInstitucional",
+        "dataType": "text",
+        "description": "Sector institucional de la unidad ejecutora (Gobierno Central o Empresas Financieras)"
+      },
+      {
+        "field": "subsectorinstitucional",
+        "name": "SubSectorInstitucional",
+        "dataType": "text",
+        "description": "Subsector institucional de la unidad ejecutora (Gobierno Central,  seguridad social o compañias de seguros y cajas de pensiones)"
+      },
+      {
+        "field": "tipo",
+        "name": "Tipo",
+        "dataType": "text",
+        "description": "Clasificación de la unidad ejecutora en Presupuestario, Extrapesupuestario, EPS - Salud, Seguridad Social Pensiones"
+      },
+      {
+        "field": "codigoclasificacioneconomica",
+        "name": "CodigoClasificacionEconomica",
+        "dataType": "text",
+        "description": "Código del clasificador económico del concepto de ingreso"
+      },
+      {
+        "field": "nombreconceptoeconomico",
+        "name": "NombreConceptoEconomico",
+        "dataType": "text",
+        "description": "Nombre del clasificador económico del concepto de ingreso"
+      },
+      {
+        "field": "codigoconceptoeconomiconl1",
+        "name": "CodigoConceptoEconomicoNl1",
+        "dataType": "text",
+        "description": "Código del primer nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl1",
+        "name": "NombreConceptoEconomicoNl1",
+        "dataType": "text",
+        "description": "Nombre del primer nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl2",
+        "name": "CodigoConceptoEconomicoNl2",
+        "dataType": "text",
+        "description": "Código del segundo nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl2",
+        "name": "NombreConceptoEconomicoNl2",
+        "dataType": "text",
+        "description": "Nombre del segundo nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl3",
+        "name": "CodigoConceptoEconomicoNl3",
+        "dataType": "text",
+        "description": "Código del tercer nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl3",
+        "name": "NombreConceptoEconomicoNl3",
+        "dataType": "text",
+        "description": "Nombre del tercer nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl4",
+        "name": "CodigoConceptoEconomicoNl4",
+        "dataType": "text",
+        "description": "Código del cuarto nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl4",
+        "name": "NombreConceptoEconomicoNl4",
+        "dataType": "text",
+        "description": "Nombre del cuarto nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl5",
+        "name": "CodigoConceptoEconomicoNl5",
+        "dataType": "text",
+        "description": "Código del quinto nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl5",
+        "name": "NombreConceptoEconomicoNl5",
+        "dataType": "text",
+        "description": "Nombre del quinto nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl6",
+        "name": "CodigoConceptoEconomicoNl6",
+        "dataType": "text",
+        "description": "Código del sexto nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl6",
+        "name": "NombreConceptoEconomicoNl6",
+        "dataType": "text",
+        "description": "Nombre del sexto nivel del clasificador económico"
+      },
+      {
+        "field": "tipopresupuesto",
+        "name": "TipoPresupuesto",
+        "dataType": "text",
+        "description": "Corresponden a las variables cuantitativas de la ejecución."
+      },
+      {
+        "field": "valor",
+        "name": "Valor",
+        "dataType": "number",
+        "description": "Valor asociado a cada tipo de presupuesto"
+      },
+      {
+        "field": "marca",
+        "name": "Marca",
+        "dataType": "text",
+        "description": "Identificación para la agregación de los datos en la consulta"
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/hebe-yxy5.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/hebe-yxy5/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/hebe-yxy5/rows.json",
+    "permalink": "https://www.datos.gov.co/d/hebe-yxy5"
+  },
+  {
+    "id": "34ig-aigy",
+    "name": "Ingresos Desagregados por Vigencia",
+    "description": "Ingresos Desagregados por Vigencia",
+    "attribution": "Ministerio de Hacienda y Crédito Público - MinHacienda, Bogotá D.C.",
+    "type": "tabular",
+    "category": "Hacienda y Crédito Público",
+    "tags": [
+      "rubros"
+    ],
+    "rowCount": null,
+    "createdAt": 1750091839,
+    "rowsUpdatedAt": 1782261995,
+    "publicationDate": 1750094382,
+    "columns": [
+      {
+        "field": "anio",
+        "name": "Anio",
+        "dataType": "text",
+        "description": "Hace referencia al período comprendido entre el 1 de enero hasta el 31 de diciembre que corresponde a una Vigencia Fiscal"
+      },
+      {
+        "field": "numeromes",
+        "name": "NumeroMes",
+        "dataType": "text",
+        "description": "Número del mes sobre el cual se hace la consulta."
+      },
+      {
+        "field": "nombremes",
+        "name": "NombreMes",
+        "dataType": "text",
+        "description": "Descripción del mes sobre el cual se hace la consulta."
+      },
+      {
+        "field": "codigoentidad",
+        "name": "CodigoEntidad",
+        "dataType": "text",
+        "description": "Código de identificación de las Unidades Ejecutoras"
+      },
+      {
+        "field": "nombreentidadcatalogo",
+        "name": "NombreEntidadCatalogo",
+        "dataType": "text",
+        "description": "Identificación de cada una de las unidades institucionales que conforman el Presupuesto General de la Nación de acuerdo con las partes que lo constituyen"
+      },
+      {
+        "field": "nombreentidadsector",
+        "name": "NombreEntidadSector",
+        "dataType": "text",
+        "description": "Grupo de entidades que tienen actividades misionales comunes que guardan unidad"
+      },
+      {
+        "field": "codigorubro",
+        "name": "CodigoRubro",
+        "dataType": "text",
+        "description": "Código para identificar el rubro teniendo en cuenta los niveles de desagregación."
+      },
+      {
+        "field": "nombrerubro",
+        "name": "NombreRubro",
+        "dataType": "text",
+        "description": "Descripción de la cuenta especifica que agrupa los ingresos por cierto concepto."
+      },
+      {
+        "field": "idfuente",
+        "name": "IdFuente",
+        "dataType": "text",
+        "description": "Hace referencia al código del ingreso que financia el gasto"
+      },
+      {
+        "field": "nombreidfuente",
+        "name": "NombreIdFuente",
+        "dataType": "text",
+        "description": "Hace referencia al origen del ingreso que financia el gasto, puede ser Nación o propios."
+      },
+      {
+        "field": "cant_conceptoingreso",
+        "name": "Cant_ConceptoIngreso",
+        "dataType": "text",
+        "description": "Número de caracteres del ConceptoIngreso"
+      },
+      {
+        "field": "tipoconcepto",
+        "name": "TipoConcepto",
+        "dataType": "text",
+        "description": "Origen de los datos Agregación o Captura"
+      },
+      {
+        "field": "conceptoingreso",
+        "name": "ConceptoIngreso",
+        "dataType": "text",
+        "description": "Código desagregado del concepto de ingreso"
+      },
+      {
+        "field": "nombreconceptoingreso",
+        "name": "NombreConceptoIngreso",
+        "dataType": "text",
+        "description": "Nombre de código desagregado del concepto de ingreso"
+      },
+      {
+        "field": "niveluno",
+        "name": "NivelUno",
+        "dataType": "text",
+        "description": "Identificación que define el concepto del cual proviene el recurso de la nación ( Ing. Corrientes, Rec. Capital, Fondos Especiales ó  Contribuciones Parafiscales) y separa la fuente (1,2,5,6 Recursos Nación y 3 Recursos Propios de Estapúblicos)"
+      },
+      {
+        "field": "nombreniveluno",
+        "name": "NombreNivelUno",
+        "dataType": "text",
+        "description": "Es el nombre del concepto del cual proviene el recurso de la nación"
+      },
+      {
+        "field": "niveldos",
+        "name": "NivelDos",
+        "dataType": "text",
+        "description": "Identificación que Define el concepto del cual provienen los Recursos propios de los Establecimientos Públicos ( Recursos propios, Fondos Especiales y Contribuciones Parafiscales)"
+      },
+      {
+        "field": "nombreniveldos",
+        "name": "NombreNivelDos",
+        "dataType": "text",
+        "description": "Es el nombre del concepto del cual provienen los Recursos Propios de los Establecimientos Públicos"
+      },
+      {
+        "field": "niveltres",
+        "name": "NivelTres",
+        "dataType": "text",
+        "description": "Define cada uno de los Fondos Especiales sin importar su fuente, Nación o Propios."
+      },
+      {
+        "field": "nombreniveltres",
+        "name": "NombreNivelTres",
+        "dataType": "text",
+        "description": "Es el nombre de cada uno de los Fondos Especiales"
+      },
+      {
+        "field": "nivelcuatro",
+        "name": "NivelCuatro",
+        "dataType": "text",
+        "description": "Define la parte perteneciente a Ingresos corrientes o Recursos de Capital de cada uno de los Fondos Especiales y Contribuciones Parafiscales sin importar su fuente."
+      },
+      {
+        "field": "nombrenivelcuatro",
+        "name": "NombreNivelCuatro",
+        "dataType": "text",
+        "description": "Hace referencia a la parte perteneciente a Ingresos corrientes o Recursos de Capital de cada uno de los Fondos Especiales y Contribuciones Parafiscales sin importar su fuente."
+      },
+      {
+        "field": "nivelcinco",
+        "name": "NivelCinco",
+        "dataType": "text",
+        "description": "Define la naturaleza de los ingresos corrientes entre tributarios y no tributarios. Además desagrega los recursos de capital entre sus diferentes conceptos como excedentes, rendimientos financieros , disposición de activos, etc."
+      },
+      {
+        "field": "nombrenivelcinco",
+        "name": "NombreNivelCinco",
+        "dataType": "text",
+        "description": "Define la naturaleza de los ingresos corrientes entre tributarios y no tributarios. Además desagrega los recursos de capital entre sus diferentes conceptos como excedentes, rendimientos financieros , disposición de activos, etc."
+      },
+      {
+        "field": "nivelseis",
+        "name": "NivelSeis",
+        "dataType": "text",
+        "description": "Desagregación al nivel de Impuestos directos e indirectos para los Ingresos Corrientes. En cuanto a recursos de capital se definen las subcuentas de rendimientos "
+      },
+      {
+        "field": "nombrenivelseis",
+        "name": "NombreNivelSeis",
+        "dataType": "text",
+        "description": "Denominación de la desagregación al nivel de Impuestos directos e indirectos para los Ingresos Corrientes. En cuanto a recursos de capital se definen las subcuentas de rendimientos "
+      },
+      {
+        "field": "nivelsiete",
+        "name": "NivelSiete",
+        "dataType": "text",
+        "description": "Maxima desagregación de impuestos. Desagregación de las contribuciones, tasas y derechos de recursos de la nación. Desagregación de intereses, ganancias y donaciónes de recursos de Establecimientos Públicos"
+      },
+      {
+        "field": "nombrenivelsiete",
+        "name": "NombreNivelSiete",
+        "dataType": "text",
+        "description": "Denominación de la maxima desagregación de impuestos. Desagregación de las contribuciones, tasas y derechos de recursos de la nación. Desagregación de intereses, ganancias y donaciónes de recursos de Establecimientos Públicos"
+      },
+      {
+        "field": "nivelocho",
+        "name": "NivelOcho",
+        "dataType": "text",
+        "description": "Desagregación de Salud en Contribuciones Parafiscales de la Nación. Desagregación tipo de producción de Establecimientos Públicos."
+      },
+      {
+        "field": "nombrenivelocho",
+        "name": "NombreNivelOcho",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de Salud en Contribuciones Parafiscales de la Nación. Desagregación tipo de producción de Establecimientos Públicos."
+      },
+      {
+        "field": "nivelnueve",
+        "name": "NivelNueve",
+        "dataType": "text",
+        "description": "Desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios y productos."
+      },
+      {
+        "field": "nombrenivelnueve",
+        "name": "NombreNivelNueve",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios y productos."
+      },
+      {
+        "field": "niveldiez",
+        "name": "NivelDiez",
+        "dataType": "text",
+        "description": "Desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios especializados."
+      },
+      {
+        "field": "nombreniveldiez",
+        "name": "NombreNivelDiez",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de ingresos No Tributarios de Nación y Propios por diferentes servicios especializados."
+      },
+      {
+        "field": "nivelonce",
+        "name": "NivelOnce",
+        "dataType": "text",
+        "description": "Desagregación de ingresos Nación y Propios por servicios de arrendamiento, educación, salud y otros servicios sociales"
+      },
+      {
+        "field": "nombrenivelonce",
+        "name": "NombreNivelOnce",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de ingresos Nación y Propios por servicios de arrendamiento, educación, salud y otros servicios sociales"
+      },
+      {
+        "field": "niveldoce",
+        "name": "NivelDoce",
+        "dataType": "text",
+        "description": "Desagregación de ingresos Nación y Propios por servicios de educativos, de salud y de copia y reproducción."
+      },
+      {
+        "field": "nombreniveldoce",
+        "name": "NombreNivelDoce",
+        "dataType": "text",
+        "description": "Denominación de la desagregación de ingresos Nación y Propios por servicios de educativos, de salud y de copia y reproducción."
+      },
+      {
+        "field": "codigofuente",
+        "name": "CodigoFuente",
+        "dataType": "text",
+        "description": "Código para identificar de donde proviene el recurso."
+      },
+      {
+        "field": "nombrefuente",
+        "name": "NombreFuente",
+        "dataType": "text",
+        "description": "Identifica si el ingreso proviene de Nación o Propios."
+      },
+      {
+        "field": "codigosituacion",
+        "name": "CodigoSituacion",
+        "dataType": "text",
+        "description": "Código para identificar la situación de fondos."
+      },
+      {
+        "field": "nombresituacion",
+        "name": "NombreSituacion",
+        "dataType": "text",
+        "description": "Identifica si es Con Situación de Fondos o Sin Situación de Fondos"
+      },
+      {
+        "field": "autonomia",
+        "name": "Autonomia",
+        "dataType": "text",
+        "description": "Clasificación de la unidad ejecutora (central o estapúblico)"
+      },
+      {
+        "field": "cuin",
+        "name": "CUIN",
+        "dataType": "text",
+        "description": "Código Único Institucional (CUIN), el cual es un código que se usa para identificar y clasificar a las entidades públicas en el país"
+      },
+      {
+        "field": "ecp",
+        "name": "ECP",
+        "dataType": "text",
+        "description": "Siglas de las Entidades Contables Públicas"
+      },
+      {
+        "field": "nivelterritorial",
+        "name": "NivelTerritorial",
+        "dataType": "text",
+        "description": "Clasificacion territorial de la unidad ejecutora"
+      },
+      {
+        "field": "sector",
+        "name": "Sector",
+        "dataType": "text",
+        "description": "Grupo de entidades que tienen actividades misionales comunes que guardan unidad"
+      },
+      {
+        "field": "sectorinstitucional",
+        "name": "SectorInstitucional",
+        "dataType": "text",
+        "description": "Sector institucional de la unidad ejecutora (Gobierno Central o Empresas Financieras)"
+      },
+      {
+        "field": "subsectorinstitucional",
+        "name": "SubSectorInstitucional",
+        "dataType": "text",
+        "description": "Subsector institucional de la unidad ejecutora (Gobierno Central,  seguridad social o compañias de seguros y cajas de pensiones)"
+      },
+      {
+        "field": "tipo",
+        "name": "Tipo",
+        "dataType": "text",
+        "description": "Clasificación de la unidad ejecutora en Presupuestario, Extrapesupuestario, EPS - Salud, Seguridad Social Pensiones"
+      },
+      {
+        "field": "codigoclasificacioneconomica",
+        "name": "CodigoClasificacionEconomica",
+        "dataType": "text",
+        "description": "Código del clasificador económico del concepto de ingreso"
+      },
+      {
+        "field": "nombreconceptoeconomico",
+        "name": "NombreConceptoEconomico",
+        "dataType": "text",
+        "description": "Nombre del clasificador económico del concepto de ingreso"
+      },
+      {
+        "field": "codigoconceptoeconomiconl1",
+        "name": "CodigoConceptoEconomicoNl1",
+        "dataType": "text",
+        "description": "Código del primer nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl1",
+        "name": "NombreConceptoEconomicoNl1",
+        "dataType": "text",
+        "description": "Nombre del primer nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl2",
+        "name": "CodigoConceptoEconomicoNl2",
+        "dataType": "text",
+        "description": "Código del segundo nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl2",
+        "name": "NombreConceptoEconomicoNl2",
+        "dataType": "text",
+        "description": "Nombre del segundo nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl3",
+        "name": "CodigoConceptoEconomicoNl3",
+        "dataType": "text",
+        "description": "Código del tercer nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl3",
+        "name": "NombreConceptoEconomicoNl3",
+        "dataType": "text",
+        "description": "Nombre del tercer nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl4",
+        "name": "CodigoConceptoEconomicoNl4",
+        "dataType": "text",
+        "description": "Código del cuarto nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl4",
+        "name": "NombreConceptoEconomicoNl4",
+        "dataType": "text",
+        "description": "Nombre del cuarto nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl5",
+        "name": "CodigoConceptoEconomicoNl5",
+        "dataType": "text",
+        "description": "Código del quinto nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl5",
+        "name": "NombreConceptoEconomicoNl5",
+        "dataType": "text",
+        "description": "Nombre del quinto nivel del clasificador económico"
+      },
+      {
+        "field": "codigoconceptoeconomiconl6",
+        "name": "CodigoConceptoEconomicoNl6",
+        "dataType": "text",
+        "description": "Código del sexto nivel del clasificador económico"
+      },
+      {
+        "field": "nombreconceptoeconomiconl6",
+        "name": "NombreConceptoEconomicoNl6",
+        "dataType": "text",
+        "description": "Nombre del sexto nivel del clasificador económico"
+      },
+      {
+        "field": "aforoinicial",
+        "name": "AforoInicial",
+        "dataType": "number",
+        "description": "Monto estimado del recaudo de ingresos en la Ley de rentas y recursos de capital  para atender los gastos contenidos en la Ley anual de presupuesto."
+      },
+      {
+        "field": "modificacionesaforo",
+        "name": "ModificacionesAforo",
+        "dataType": "number",
+        "description": "Afectaciones en el aforo que buscan adecuar el presupuesto a variaciones significativas, por razones imprevistas durante una vigencia."
+      },
+      {
+        "field": "aforovigente",
+        "name": "AforoVigente",
+        "dataType": "number",
+        "description": "Es el aforo inicial más las modificaciones."
+      },
+      {
+        "field": "saldocausado",
+        "name": "SaldoCausado",
+        "dataType": "number",
+        "description": "Valor del saldo causado"
+      },
+      {
+        "field": "recaudoefectivoperiodo",
+        "name": "RecaudoEfectivoPeriodo",
+        "dataType": "number",
+        "description": "Valor del recaudo del mes"
+      },
+      {
+        "field": "saldoacreedor",
+        "name": "SaldoAcreedor",
+        "dataType": "number",
+        "description": "Valor del saldo acreedor"
+      },
+      {
+        "field": "devolucionespagadasacumulado",
+        "name": "DevolucionesPagadasAcumulado",
+        "dataType": "number",
+        "description": "Valor de las devoluciones acumuladas"
+      },
+      {
+        "field": "recaudoefectivoacumulado",
+        "name": "RecaudoEfectivoAcumulado",
+        "dataType": "number",
+        "description": "Valor del recaudo acumulado al mes de la consulta"
+      },
+      {
+        "field": "saldoaforoporrecaudar",
+        "name": "SaldoAforoPorRecaudar",
+        "dataType": "number",
+        "description": "Valor de la diferencia entre aforo vigente y recaudo acumulado"
+      },
+      {
+        "field": "recaudoefectivoacumuladoneto",
+        "name": "RecaudoEfectivoAcumuladoNeto",
+        "dataType": "number",
+        "description": "Valor del recaudo total descontadas las devoluciones."
+      },
+      {
+        "field": "nivel",
+        "name": "Nivel",
+        "dataType": "text",
+        "description": "Número de nivel de agregación de los datos de la consulta"
+      }
+    ],
+    "apiEndpoint": "https://www.datos.gov.co/resource/34ig-aigy.json",
+    "csvEndpoint": "https://www.datos.gov.co/api/views/34ig-aigy/rows.csv",
+    "jsonEndpoint": "https://www.datos.gov.co/api/views/34ig-aigy/rows.json",
+    "permalink": "https://www.datos.gov.co/d/34ig-aigy"
+  }
+]
